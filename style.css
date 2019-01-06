@@ -142,31 +142,36 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
   }
-
-  h1 {
-    font-size: 7rem;
-    font-weight: bold;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  h1 {
-    margin-left: calc(50vw - 3.5rem);
-  }
-}
-
-p {
 }
 
 em {
   font-style: italic;
 }
-h1 {
-  font-size: 7rem;
+#count {
+  margin: 20px auto 40px auto;
+  color: white;
+  background-color: #cecbcb;
+  width: 208px;
+  height: 220px;
+  text-align: center;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+#count h1 {
+  font-size: 10rem;
   font-weight: bold;
+  line-height: 220px;
+}
+#count hr {
+  position: absolute;
+  top: 110px;
+  border: 1px solid #bdbdbd;
+  width: 100%;
+  margin: 0px;
 }
 
 h3 {
@@ -177,8 +182,41 @@ ul {
   list-style-type: none;
 }
 
-li {
-  margin-top: 1em;
+.war {
+  padding: 0.6em 0px;
+  border-bottom: 1px solid #bfbfbf;
+}
+
+.war a {
+  color: #8c8b8b;
+  font-size: 1.1em;
+  text-decoration: none;
+}
+
+.war a:hover {
+  color: #5a5a5a;
+}
+
+.war p {
+  margin: 2px 0px;
+  font-size: 0.7em;
+}
+
+.war i.fas {
+  width: 20px;
+  margin-right: 7px;
+  color: #8c8b8b;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+ul.casualties {
+  list-style: circle;
+  margin-left: 50px;
+}
+
+.casualties li {
+  font-size: 0.7em;
 }
 
 footer {
